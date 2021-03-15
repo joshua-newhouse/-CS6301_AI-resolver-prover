@@ -10,10 +10,6 @@ public class AtomicProposition implements Proposition {
         this.identifier = identifier;
     }
 
-    public String getIdentifier() {
-        return identifier;
-    }
-
     @Override
     public boolean equals(Object o) {
         if(this == o) return true;
@@ -25,15 +21,6 @@ public class AtomicProposition implements Proposition {
     @Override
     public int hashCode() {
         return Objects.hash(identifier);
-    }
-
-    @Override
-    public Proposition resolve(Proposition other) {
-        if (other instanceof NegatedProposition && ((NegatedProposition) other).getProposition().equals(this)) {
-            return EmptyProposition.getInstance();
-        }
-
-        return this;
     }
 
     @Override

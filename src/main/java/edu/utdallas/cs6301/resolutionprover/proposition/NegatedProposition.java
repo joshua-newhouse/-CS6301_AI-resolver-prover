@@ -10,19 +10,6 @@ public class NegatedProposition implements Proposition {
         this.proposition = proposition;
     }
 
-    public Proposition getProposition() {
-        return proposition;
-    }
-
-    @Override
-    public Proposition resolve(Proposition other) {
-        if (other instanceof AtomicProposition && other.equals(this.proposition)) {
-            return EmptyProposition.getInstance();
-        }
-
-        return this;
-    }
-
     @Override
     public boolean normalizeSet(Set<Proposition> propositions) {
         return propositions.remove(proposition);
