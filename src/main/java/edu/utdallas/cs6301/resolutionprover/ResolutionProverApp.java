@@ -4,8 +4,6 @@ import edu.utdallas.cs6301.resolutionprover.io.FileIOService;
 import edu.utdallas.cs6301.resolutionprover.proposition.PropositionFactory;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class ResolutionProverApp {
     public static void main(String[] args) throws IOException {
