@@ -1,0 +1,4 @@
+~NoLeakH1 ~NoLeakH2 NoLeak ~LowTemp ReactorUnitSafe V1 V2 okH1 okH2 l
+~LowTemp ReactorUnitSafe V1 V2 okH1 okH2 l ~NoLeakH1 ~NoLeakH2 NoLeak
+~LowTemp ~NoLeakH1 ~LowTemp
+~LowTemp ~NoLeakH1 LowTemp
