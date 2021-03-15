@@ -1,0 +1,391 @@
+Constructing the knowledge base from file src/main/resources/task1.in
+1: ~NoLeak + ReactorUnitSafe + ~LowTemp    {}
+2: ~NoLeakH2 + ~NoLeakH1 + NoLeak    {}
+3: NoLeakH1 + ~okH1    {}
+4: okH1 + NoLeakH1 + V1    {}
+5: ~okH2 + NoLeakH2    {}
+6: okH2 + NoLeakH2 + V2    {}
+7: ~V1 + ~l + ~V2 + LowTemp    {}
+8: ~V1 + l + LowTemp    {}
+9: ~V2 + l + LowTemp    {}
+10: ~l    {}
+11: ~okH2    {}
+12: okH1    {}
+13: V1    {}
+14: ~V2    {}
+15: ~LowTemp    {}
+Size of final clause set: 15
+Resolving the knowledge base
+1: ~NoLeak + ReactorUnitSafe + ~LowTemp    {}
+2: ~NoLeakH2 + ~NoLeakH1 + NoLeak    {}
+3: NoLeakH1 + ~okH1    {}
+4: okH1 + NoLeakH1 + V1    {}
+5: ~okH2 + NoLeakH2    {}
+6: okH2 + NoLeakH2 + V2    {}
+7: ~V1 + ~l + ~V2 + LowTemp    {}
+8: ~V1 + l + LowTemp    {}
+9: ~V2 + l + LowTemp    {}
+10: ~l    {}
+11: ~okH2    {}
+12: okH1    {}
+13: V1    {}
+14: ~V2    {}
+15: ~LowTemp    {}
+16: ~NoLeakH2 + ~NoLeakH1 + ReactorUnitSafe + ~LowTemp    {1,2}
+17: ~NoLeak + ReactorUnitSafe + ~V1 + ~l + ~V2    {1,7}
+18: ~NoLeak + ReactorUnitSafe + ~V1 + l    {1,8}
+19: ~NoLeak + ReactorUnitSafe + ~V2 + l    {1,9}
+20: ~NoLeakH2 + ~okH1 + NoLeak    {2,3}
+21: ~NoLeakH2 + okH1 + NoLeak + V1    {2,4}
+22: ~okH2 + ~NoLeakH1 + NoLeak    {2,5}
+23: okH2 + ~NoLeakH1 + NoLeak + V2    {2,6}
+24: NoLeakH1 + V1    {3,4}
+25: NoLeakH1    {3,12}
+26: okH1 + NoLeakH1 + ~l + ~V2 + LowTemp    {4,7}
+27: okH1 + NoLeakH1 + l + LowTemp    {4,8}
+28: NoLeakH2 + V2    {5,6}
+29: okH2 + NoLeakH2 + ~V1 + ~l + LowTemp    {6,7}
+30: okH2 + NoLeakH2 + l + LowTemp    {6,9}
+31: okH2 + NoLeakH2    {6,14}
+32: ~V1 + ~V2 + LowTemp    {7,8}
+33: ~l + ~V2 + LowTemp    {7,13}
+34: ~V1 + ~l + ~V2    {7,15}
+35: ~V1 + LowTemp    {8,10}
+36: l + LowTemp    {8,13}
+37: ~V1 + l    {8,15}
+38: ~V2 + LowTemp    {9,10}
+39: ~V2 + l    {9,15}
+40: ~NoLeakH2 + ~okH1 + ReactorUnitSafe + ~LowTemp    {1,20}
+41: ~NoLeakH2 + okH1 + ReactorUnitSafe + V1 + ~LowTemp    {1,21}
+42: ~okH2 + ~NoLeakH1 + ReactorUnitSafe + ~LowTemp    {1,22}
+43: okH2 + ~NoLeakH1 + ReactorUnitSafe + V2 + ~LowTemp    {1,23}
+44: okH1 + NoLeakH1 + ~NoLeak + ReactorUnitSafe + ~l + ~V2    {1,26}
+45: okH1 + NoLeakH1 + ~NoLeak + ReactorUnitSafe + l    {1,27}
+46: okH2 + NoLeakH2 + ~NoLeak + ReactorUnitSafe + ~V1 + ~l    {1,29}
+47: okH2 + NoLeakH2 + ~NoLeak + ReactorUnitSafe + l    {1,30}
+48: ~NoLeak + ReactorUnitSafe + ~V1 + ~V2    {1,32}
+49: ~NoLeak + ReactorUnitSafe + ~l + ~V2    {1,33}
+50: ~NoLeak + ReactorUnitSafe + ~V1    {1,35}
+51: ~NoLeak + ReactorUnitSafe + l    {1,36}
+52: ~NoLeak + ReactorUnitSafe + ~V2    {1,38}
+53: ~NoLeakH2 + ~NoLeakH1 + ReactorUnitSafe + ~V1 + ~l + ~V2    {2,17}
+54: ~NoLeakH2 + ~NoLeakH1 + ReactorUnitSafe + ~V1 + l    {2,18}
+55: ~NoLeakH2 + ~NoLeakH1 + ReactorUnitSafe + ~V2 + l    {2,19}
+56: ~NoLeakH2 + NoLeak + V1    {2,24}
+57: ~NoLeakH2 + NoLeak    {2,25}
+58: ~NoLeakH2 + okH1 + NoLeak + ~l + ~V2 + LowTemp    {2,26}
+59: ~NoLeakH2 + okH1 + NoLeak + l + LowTemp    {2,27}
+60: ~NoLeakH1 + NoLeak + V2    {2,28}
+61: okH2 + ~NoLeakH1 + NoLeak + ~V1 + ~l + LowTemp    {2,29}
+62: okH2 + ~NoLeakH1 + NoLeak + l + LowTemp    {2,30}
+63: okH2 + ~NoLeakH1 + NoLeak    {2,31}
+64: NoLeakH1 + ~NoLeakH2 + NoLeak + V1    {3,21}
+65: ~okH2 + ~okH1 + NoLeak    {3,22}
+66: okH2 + ~okH1 + NoLeak + V2    {3,23}
+67: NoLeakH1 + ~l + ~V2 + LowTemp    {3,26}
+68: NoLeakH1 + l + LowTemp    {3,27}
+69: okH1 + ~okH2 + NoLeak + V1    {4,22}
+70: okH1 + okH2 + NoLeak + V1 + V2    {4,23}
+71: okH1 + NoLeakH1 + okH2 + NoLeakH2 + ~l + LowTemp    {4,29}
+72: okH1 + NoLeakH1 + ~V2 + LowTemp    {4,32}
+73: okH1 + NoLeakH1 + ~l + ~V2    {4,34}
+74: okH1 + NoLeakH1 + LowTemp    {4,35}
+75: okH1 + NoLeakH1 + l    {4,37}
+76: NoLeakH2 + ~NoLeakH1 + NoLeak + V2    {5,23}
+77: NoLeakH2 + ~V1 + ~l + LowTemp    {5,29}
+78: NoLeakH2 + l + LowTemp    {5,30}
+79: NoLeakH2    {5,31}
+80: okH2 + NoLeakH2 + ~V1 + LowTemp    {6,32}
+81: okH2 + NoLeakH2 + ~l + LowTemp    {6,33}
+82: okH2 + NoLeakH2 + ~V1 + ~l    {6,34}
+83: okH2 + NoLeakH2 + LowTemp    {6,38}
+84: okH2 + NoLeakH2 + l    {6,39}
+85: ~NoLeak + ~V1 + ReactorUnitSafe + ~V2 + LowTemp    {7,18}
+86: okH1 + NoLeakH1 + ~V1 + ~V2 + LowTemp    {7,27}
+87: okH2 + NoLeakH2 + ~V1 + ~V2 + LowTemp    {7,30}
+88: LowTemp    {10,36}
+89: ~V1    {10,37}
+90: ~l + ~V2    {13,34}
+91: l    {13,37}
+92: ~V1 + ~V2    {15,32}
+93: ~NoLeakH2 + ReactorUnitSafe + V1 + ~LowTemp    {16,24}
+94: ~NoLeakH2 + ReactorUnitSafe + ~LowTemp    {16,25}
+95: ~NoLeakH2 + okH1 + ReactorUnitSafe + ~l + ~V2    {16,26}
+96: ~NoLeakH2 + okH1 + ReactorUnitSafe + l    {16,27}
+97: ~NoLeakH1 + ReactorUnitSafe + V2 + ~LowTemp    {16,28}
+98: okH2 + ~NoLeakH1 + ReactorUnitSafe + ~V1 + ~l    {16,29}
+99: okH2 + ~NoLeakH1 + ReactorUnitSafe + l    {16,30}
+100: okH2 + ~NoLeakH1 + ReactorUnitSafe + ~LowTemp    {16,31}
+101: ~NoLeakH2 + ~NoLeakH1 + ReactorUnitSafe + ~V1 + ~V2    {16,32}
+102: ~NoLeakH2 + ~NoLeakH1 + ReactorUnitSafe + ~l + ~V2    {16,33}
+103: ~NoLeakH2 + ~NoLeakH1 + ReactorUnitSafe + ~V1    {16,35}
+104: ~NoLeakH2 + ~NoLeakH1 + ReactorUnitSafe + l    {16,36}
+105: ~NoLeakH2 + ~NoLeakH1 + ReactorUnitSafe + ~V2    {16,38}
+106: ~NoLeakH2 + ~okH1 + ReactorUnitSafe + ~V1 + ~l + ~V2    {17,20}
+107: ~okH2 + ~NoLeakH1 + ReactorUnitSafe + ~V1 + ~l + ~V2    {17,22}
+108: NoLeakH1 + ~NoLeak + ReactorUnitSafe + ~l + ~V2    {17,24}
+109: okH1 + NoLeakH1 + ~NoLeak + ReactorUnitSafe + ~V1 + ~V2 + LowTemp    {17,27}
+110: NoLeakH2 + ~NoLeak + ReactorUnitSafe + ~V1 + ~l    {17,28}
+111: okH2 + NoLeakH2 + ~NoLeak + ReactorUnitSafe + ~V1 + ~V2 + LowTemp    {17,30}
+112: ~NoLeakH2 + ~okH1 + ReactorUnitSafe + ~V1 + l    {18,20}
+113: ~okH2 + ~NoLeakH1 + ReactorUnitSafe + ~V1 + l    {18,22}
+114: okH2 + ~NoLeakH1 + ReactorUnitSafe + ~V1 + l + V2    {18,23}
+115: NoLeakH1 + ~NoLeak + ReactorUnitSafe + l    {18,24}
+116: okH2 + NoLeakH2 + ~NoLeak + ReactorUnitSafe + ~V1 + LowTemp    {18,29}
+117: ~NoLeakH2 + ~okH1 + ReactorUnitSafe + ~V2 + l    {19,20}
+118: ~NoLeakH2 + okH1 + ReactorUnitSafe + ~V2 + V1 + l    {19,21}
+119: ~okH2 + ~NoLeakH1 + ReactorUnitSafe + ~V2 + l    {19,22}
+120: okH1 + NoLeakH1 + ~NoLeak + ReactorUnitSafe + ~V2 + LowTemp    {19,26}
+121: NoLeakH2 + ~NoLeak + ReactorUnitSafe + l    {19,28}
+122: ~NoLeak + ReactorUnitSafe + ~V2 + LowTemp    {19,33}
+123: ~NoLeakH2 + NoLeakH1 + NoLeak + ~l + ~V2 + LowTemp    {20,26}
+124: ~NoLeakH2 + NoLeakH1 + NoLeak + l + LowTemp    {20,27}
+125: ~okH1 + NoLeak + V2    {20,28}
+126: okH2 + ~okH1 + NoLeak + ~V1 + ~l + LowTemp    {20,29}
+127: okH2 + ~okH1 + NoLeak + l + LowTemp    {20,30}
+128: okH2 + ~okH1 + NoLeak    {20,31}
+129: okH1 + NoLeak + V1 + V2    {21,28}
+130: okH1 + okH2 + NoLeak + ~l + LowTemp    {21,29}
+131: okH1 + okH2 + NoLeak + V1 + l + LowTemp    {21,30}
+132: okH1 + okH2 + NoLeak + V1    {21,31}
+133: ~NoLeakH2 + okH1 + NoLeak + ~V2 + LowTemp    {21,32}
+134: ~NoLeakH2 + okH1 + NoLeak + ~l + ~V2    {21,34}
+135: ~NoLeakH2 + okH1 + NoLeak + LowTemp    {21,35}
+136: ~NoLeakH2 + okH1 + NoLeak + l    {21,37}
+137: ~okH2 + NoLeak + V1    {22,24}
+138: ~okH2 + NoLeak    {22,25}
+139: ~okH2 + okH1 + NoLeak + ~l + ~V2 + LowTemp    {22,26}
+140: ~okH2 + okH1 + NoLeak + l + LowTemp    {22,27}
+141: NoLeakH2 + ~NoLeakH1 + NoLeak + ~V1 + ~l + LowTemp    {22,29}
+142: NoLeakH2 + ~NoLeakH1 + NoLeak + l + LowTemp    {22,30}
+143: NoLeakH2 + ~NoLeakH1 + NoLeak    {22,31}
+144: okH2 + NoLeak + V1 + V2    {23,24}
+145: okH2 + NoLeak + V2    {23,25}
+146: okH1 + okH2 + NoLeak + V2 + l + LowTemp    {23,27}
+147: okH2 + ~NoLeakH1 + NoLeak + ~V1 + LowTemp    {23,32}
+148: okH2 + ~NoLeakH1 + NoLeak + ~l + LowTemp    {23,33}
+149: okH2 + ~NoLeakH1 + NoLeak + ~V1 + ~l    {23,34}
+150: okH2 + ~NoLeakH1 + NoLeak + LowTemp    {23,38}
+151: okH2 + ~NoLeakH1 + NoLeak + l    {23,39}
+152: NoLeakH1 + okH2 + NoLeakH2 + ~l + LowTemp    {24,29}
+153: NoLeakH1 + ~V2 + LowTemp    {24,32}
+154: NoLeakH1 + ~l + ~V2    {24,34}
+155: NoLeakH1 + LowTemp    {24,35}
+156: NoLeakH1 + l    {24,37}
+157: okH1 + NoLeakH1 + NoLeakH2 + ~l + LowTemp    {26,28}
+158: okH1 + NoLeakH1 + okH2 + NoLeakH2 + ~V2 + LowTemp    {26,30}
+159: okH1 + NoLeakH1 + okH2 + NoLeakH2 + ~V1 + LowTemp    {27,29}
+160: NoLeakH2 + ~V1 + LowTemp    {28,32}
+161: NoLeakH2 + ~l + LowTemp    {28,33}
+162: NoLeakH2 + ~V1 + ~l    {28,34}
+163: NoLeakH2 + LowTemp    {28,38}
+164: NoLeakH2 + l    {28,39}
+165: okH2 + NoLeakH2 + ~V2 + LowTemp    {30,33}
+166: NoLeakH1 + ~NoLeakH2 + ReactorUnitSafe + V1 + ~LowTemp    {1,64}
+167: ~okH2 + ~okH1 + ReactorUnitSafe + ~LowTemp    {1,65}
+168: okH2 + ~okH1 + ReactorUnitSafe + V2 + ~LowTemp    {1,66}
+169: okH1 + ~okH2 + ReactorUnitSafe + V1 + ~LowTemp    {1,69}
+170: okH1 + okH2 + ReactorUnitSafe + V1 + V2 + ~LowTemp    {1,70}
+171: okH1 + NoLeakH1 + okH2 + NoLeakH2 + ~NoLeak + ReactorUnitSafe + ~l    {1,71}
+172: okH1 + NoLeakH1 + ~NoLeak + ReactorUnitSafe + ~V2    {1,72}
+173: okH1 + NoLeakH1 + ~NoLeak + ReactorUnitSafe    {1,74}
+174: NoLeakH2 + ~NoLeakH1 + ReactorUnitSafe + V2 + ~LowTemp    {1,76}
+175: okH2 + NoLeakH2 + ~NoLeak + ReactorUnitSafe + ~V1    {1,80}
+176: okH2 + NoLeakH2 + ~NoLeak + ReactorUnitSafe + ~l    {1,81}
+177: okH2 + NoLeakH2 + ~NoLeak + ReactorUnitSafe    {1,83}
+178: okH1 + NoLeakH1 + ~NoLeak + ReactorUnitSafe + ~V1 + ~V2    {1,86}
+179: okH2 + NoLeakH2 + ~NoLeak + ReactorUnitSafe + ~V1 + ~V2    {1,87}
+180: ~NoLeak + ReactorUnitSafe    {1,88}
+181: ~NoLeakH2 + NoLeakH1 + ReactorUnitSafe + ~l + ~V2    {1,123}
+182: ~NoLeakH2 + NoLeakH1 + ReactorUnitSafe + l    {1,124}
+183: ~okH1 + ReactorUnitSafe + V2 + ~LowTemp    {1,125}
+184: okH2 + ~okH1 + ReactorUnitSafe + ~V1 + ~l    {1,126}
+185: okH2 + ~okH1 + ReactorUnitSafe + l    {1,127}
+186: okH2 + ~okH1 + ReactorUnitSafe + ~LowTemp    {1,128}
+187: okH1 + ReactorUnitSafe + V1 + V2 + ~LowTemp    {1,129}
+188: okH1 + okH2 + ReactorUnitSafe + ~l    {1,130}
+189: okH1 + okH2 + ReactorUnitSafe + V1 + l    {1,131}
+190: okH1 + okH2 + ReactorUnitSafe + V1 + ~LowTemp    {1,132}
+191: ~NoLeakH2 + okH1 + ReactorUnitSafe + ~V2    {1,133}
+192: ~NoLeakH2 + okH1 + ReactorUnitSafe + ~l + ~V2 + ~LowTemp    {1,134}
+193: ~NoLeakH2 + okH1 + ReactorUnitSafe    {1,135}
+194: ~NoLeakH2 + okH1 + ReactorUnitSafe + l + ~LowTemp    {1,136}
+195: ~okH2 + ReactorUnitSafe + V1 + ~LowTemp    {1,137}
+196: ~okH2 + ReactorUnitSafe + ~LowTemp    {1,138}
+197: ~okH2 + okH1 + ReactorUnitSafe + ~l + ~V2    {1,139}
+198: ~okH2 + okH1 + ReactorUnitSafe + l    {1,140}
+199: NoLeakH2 + ~NoLeakH1 + ReactorUnitSafe + ~V1 + ~l    {1,141}
+200: NoLeakH2 + ~NoLeakH1 + ReactorUnitSafe + l    {1,142}
+201: NoLeakH2 + ~NoLeakH1 + ReactorUnitSafe + ~LowTemp    {1,143}
+202: okH2 + ReactorUnitSafe + V1 + V2 + ~LowTemp    {1,144}
+203: okH2 + ReactorUnitSafe + V2 + ~LowTemp    {1,145}
+204: okH1 + okH2 + ReactorUnitSafe + V2 + l    {1,146}
+205: okH2 + ~NoLeakH1 + ReactorUnitSafe + ~V1    {1,147}
+206: okH2 + ~NoLeakH1 + ReactorUnitSafe + ~l    {1,148}
+207: okH2 + ~NoLeakH1 + ReactorUnitSafe + ~V1 + ~l + ~LowTemp    {1,149}
+208: okH2 + ~NoLeakH1 + ReactorUnitSafe    {1,150}
+209: okH2 + ~NoLeakH1 + ReactorUnitSafe + l + ~LowTemp    {1,151}
+210: NoLeakH1 + okH2 + NoLeakH2 + ~NoLeak + ReactorUnitSafe + ~l    {1,152}
+211: NoLeakH1 + ~NoLeak + ReactorUnitSafe + ~V2    {1,153}
+212: NoLeakH1 + ~NoLeak + ReactorUnitSafe    {1,155}
+213: okH1 + NoLeakH1 + NoLeakH2 + ~NoLeak + ReactorUnitSafe + ~l    {1,157}
+214: okH1 + NoLeakH1 + okH2 + NoLeakH2 + ~NoLeak + ReactorUnitSafe + ~V2    {1,158}
+215: okH1 + NoLeakH1 + okH2 + NoLeakH2 + ~NoLeak + ReactorUnitSafe + ~V1    {1,159}
+216: NoLeakH2 + ~NoLeak + ReactorUnitSafe + ~V1    {1,160}
+217: NoLeakH2 + ~NoLeak + ReactorUnitSafe + ~l    {1,161}
+218: NoLeakH2 + ~NoLeak + ReactorUnitSafe    {1,163}
+219: okH2 + NoLeakH2 + ~NoLeak + ReactorUnitSafe + ~V2    {1,165}
+220: ~NoLeakH2 + NoLeak + ~l + ~V2 + LowTemp    {2,67}
+221: ~NoLeakH2 + NoLeak + l + LowTemp    {2,68}
+222: ~NoLeakH1 + NoLeak + ~V1 + ~l + LowTemp    {2,77}
+223: ~NoLeakH1 + NoLeak + l + LowTemp    {2,78}
+224: ~NoLeakH1 + NoLeak    {2,79}
+225: ~NoLeakH2 + ~NoLeakH1 + ~V1 + ReactorUnitSafe + ~V2 + LowTemp    {2,85}
+226: ~NoLeakH2 + okH1 + NoLeak + ~V1 + ~V2 + LowTemp    {2,86}
+227: okH2 + ~NoLeakH1 + NoLeak + ~V1 + ~V2 + LowTemp    {2,87}
+228: ~NoLeakH2 + ReactorUnitSafe + ~l + ~V2    {2,108}
+229: ~NoLeakH2 + okH1 + ReactorUnitSafe + ~V1 + ~V2 + LowTemp    {2,109}
+230: ~NoLeakH1 + ReactorUnitSafe + ~V1 + ~l    {2,110}
+231: okH2 + ~NoLeakH1 + ReactorUnitSafe + ~V1 + ~V2 + LowTemp    {2,111}
+232: ~NoLeakH2 + ReactorUnitSafe + l    {2,115}
+233: okH2 + ~NoLeakH1 + ReactorUnitSafe + ~V1 + LowTemp    {2,116}
+234: ~NoLeakH2 + okH1 + ReactorUnitSafe + ~V2 + LowTemp    {2,120}
+235: ~NoLeakH1 + ReactorUnitSafe + l    {2,121}
+236: ~NoLeakH2 + ~NoLeakH1 + ReactorUnitSafe + ~V2 + LowTemp    {2,122}
+237: okH2 + NoLeak + ~l + LowTemp    {2,152}
+238: ~NoLeakH2 + NoLeak + ~V2 + LowTemp    {2,153}
+239: ~NoLeakH2 + NoLeak + ~l + ~V2    {2,154}
+240: ~NoLeakH2 + NoLeak + LowTemp    {2,155}
+241: ~NoLeakH2 + NoLeak + l    {2,156}
+242: okH1 + NoLeak + ~l + LowTemp    {2,157}
+243: okH1 + okH2 + NoLeak + ~V2 + LowTemp    {2,158}
+244: okH1 + okH2 + NoLeak + ~V1 + LowTemp    {2,159}
+245: ~NoLeakH1 + NoLeak + ~V1 + LowTemp    {2,160}
+246: ~NoLeakH1 + NoLeak + ~l + LowTemp    {2,161}
+247: ~NoLeakH1 + NoLeak + ~V1 + ~l    {2,162}
+248: ~NoLeakH1 + NoLeak + LowTemp    {2,163}
+249: ~NoLeakH1 + NoLeak + l    {2,164}
+250: okH2 + ~NoLeakH1 + NoLeak + ~V2 + LowTemp    {2,165}
+251: NoLeakH1 + ~okH2 + NoLeak + V1    {3,69}
+252: NoLeakH1 + okH2 + NoLeak + V1 + V2    {3,70}
+253: NoLeakH2 + ~okH1 + NoLeak + V2    {3,76}
+254: NoLeakH1 + ~V1 + ~V2 + LowTemp    {3,86}
+255: ~NoLeakH2 + ~okH1 + ReactorUnitSafe + ~V1 + ~V2    {3,101}
+256: ~NoLeakH2 + ~okH1 + ReactorUnitSafe + ~l + ~V2    {3,102}
+257: ~NoLeakH2 + ~okH1 + ReactorUnitSafe + ~V1    {3,103}
+258: ~NoLeakH2 + ~okH1 + ReactorUnitSafe + l    {3,104}
+259: ~NoLeakH2 + ~okH1 + ReactorUnitSafe + ~V2    {3,105}
+260: ~okH2 + ~okH1 + ReactorUnitSafe + ~V1 + ~l + ~V2    {3,107}
+261: NoLeakH1 + ~NoLeak + ReactorUnitSafe + ~V1 + ~V2 + LowTemp    {3,109}
+262: ~okH2 + ~okH1 + ReactorUnitSafe + ~V1 + l    {3,113}
+263: okH2 + ~okH1 + ReactorUnitSafe + ~V1 + l + V2    {3,114}
+264: NoLeakH1 + ~NoLeakH2 + ReactorUnitSafe + ~V2 + V1 + l    {3,118}
+265: ~okH2 + ~okH1 + ReactorUnitSafe + ~V2 + l    {3,119}
+266: NoLeakH1 + ~NoLeak + ReactorUnitSafe + ~V2 + LowTemp    {3,120}
+267: NoLeakH1 + NoLeak + V1 + V2    {3,129}
+268: NoLeakH1 + okH2 + NoLeak + ~l + LowTemp    {3,130}
+269: NoLeakH1 + okH2 + NoLeak + V1 + l + LowTemp    {3,131}
+270: NoLeakH1 + okH2 + NoLeak + V1    {3,132}
+271: NoLeakH1 + ~NoLeakH2 + NoLeak + ~V2 + LowTemp    {3,133}
+272: NoLeakH1 + ~NoLeakH2 + NoLeak + ~l + ~V2    {3,134}
+273: NoLeakH1 + ~NoLeakH2 + NoLeak + LowTemp    {3,135}
+274: NoLeakH1 + ~NoLeakH2 + NoLeak + l    {3,136}
+275: NoLeakH1 + ~okH2 + NoLeak + ~l + ~V2 + LowTemp    {3,139}
+276: NoLeakH1 + ~okH2 + NoLeak + l + LowTemp    {3,140}
+277: NoLeakH2 + ~okH1 + NoLeak + ~V1 + ~l + LowTemp    {3,141}
+278: NoLeakH2 + ~okH1 + NoLeak + l + LowTemp    {3,142}
+279: NoLeakH2 + ~okH1 + NoLeak    {3,143}
+280: NoLeakH1 + okH2 + NoLeak + V2 + l + LowTemp    {3,146}
+281: okH2 + ~okH1 + NoLeak + ~V1 + LowTemp    {3,147}
+282: okH2 + ~okH1 + NoLeak + ~l + LowTemp    {3,148}
+283: okH2 + ~okH1 + NoLeak + ~V1 + ~l    {3,149}
+284: okH2 + ~okH1 + NoLeak + LowTemp    {3,150}
+285: okH2 + ~okH1 + NoLeak + l    {3,151}
+286: NoLeakH1 + NoLeakH2 + ~l + LowTemp    {3,157}
+287: NoLeakH1 + okH2 + NoLeakH2 + ~V2 + LowTemp    {3,158}
+288: NoLeakH1 + okH2 + NoLeakH2 + ~V1 + LowTemp    {3,159}
+289: okH1 + NoLeakH2 + NoLeak + V1 + V2    {4,76}
+290: okH1 + NoLeakH1 + okH2 + NoLeakH2 + LowTemp    {4,80}
+291: okH1 + NoLeakH1 + okH2 + NoLeakH2 + ~l    {4,82}
+292: okH1 + NoLeakH1    {4,89}
+293: okH1 + NoLeakH1 + ~V2    {4,92}
+294: okH1 + ~NoLeakH2 + ReactorUnitSafe + V1 + ~l + ~V2    {4,102}
+295: okH1 + ~NoLeakH2 + ReactorUnitSafe + V1 + l    {4,104}
+296: okH1 + ~NoLeakH2 + ReactorUnitSafe + V1 + ~V2    {4,105}
+297: okH1 + NoLeakH1 + okH2 + NoLeakH2 + ~NoLeak + ReactorUnitSafe + ~V2 + LowTemp    {4,111}
+298: okH1 + NoLeakH1 + okH2 + NoLeakH2 + ~NoLeak + ReactorUnitSafe + LowTemp    {4,116}
+299: okH1 + ~okH2 + ReactorUnitSafe + V1 + ~V2 + l    {4,119}
+300: okH1 + NoLeakH2 + NoLeak + ~l + LowTemp    {4,141}
+301: okH1 + NoLeakH2 + NoLeak + V1 + l + LowTemp    {4,142}
+302: okH1 + NoLeakH2 + NoLeak + V1    {4,143}
+303: okH1 + okH2 + NoLeak + LowTemp    {4,147}
+304: okH1 + okH2 + NoLeak + V1 + ~l + LowTemp    {4,148}
+305: okH1 + okH2 + NoLeak + ~l    {4,149}
+306: okH1 + okH2 + NoLeak + V1 + LowTemp    {4,150}
+307: okH1 + okH2 + NoLeak + V1 + l    {4,151}
+308: okH1 + NoLeakH1 + NoLeakH2 + LowTemp    {4,160}
+309: okH1 + NoLeakH1 + NoLeakH2 + ~l    {4,162}
+310: NoLeakH2 + ~V1 + ~V2 + LowTemp    {5,87}
+311: ~okH2 + ~NoLeakH1 + ReactorUnitSafe + ~V1 + ~V2    {5,101}
+312: ~okH2 + ~NoLeakH1 + ReactorUnitSafe + ~l + ~V2    {5,102}
+313: ~okH2 + ~NoLeakH1 + ReactorUnitSafe + ~V1    {5,103}
+314: ~okH2 + ~NoLeakH1 + ReactorUnitSafe + l    {5,104}
+315: ~okH2 + ~NoLeakH1 + ReactorUnitSafe + ~V2    {5,105}
+316: NoLeakH2 + ~NoLeak + ReactorUnitSafe + ~V1 + ~V2 + LowTemp    {5,111}
+317: NoLeakH2 + ~NoLeakH1 + ReactorUnitSafe + ~V1 + l + V2    {5,114}
+318: NoLeakH2 + ~NoLeak + ReactorUnitSafe + ~V1 + LowTemp    {5,116}
+319: ~okH2 + okH1 + NoLeak + ~V2 + LowTemp    {5,133}
+320: ~okH2 + okH1 + NoLeak + ~l + ~V2    {5,134}
+321: ~okH2 + okH1 + NoLeak + LowTemp    {5,135}
+322: ~okH2 + okH1 + NoLeak + l    {5,136}
+323: NoLeakH2 + NoLeak + V1 + V2    {5,144}
+324: NoLeakH2 + NoLeak + V2    {5,145}
+325: okH1 + NoLeakH2 + NoLeak + V2 + l + LowTemp    {5,146}
+326: NoLeakH2 + ~NoLeakH1 + NoLeak + ~V1 + LowTemp    {5,147}
+327: NoLeakH2 + ~NoLeakH1 + NoLeak + ~l + LowTemp    {5,148}
+328: NoLeakH2 + ~NoLeakH1 + NoLeak + ~V1 + ~l    {5,149}
+329: NoLeakH2 + ~NoLeakH1 + NoLeak + LowTemp    {5,150}
+330: NoLeakH2 + ~NoLeakH1 + NoLeak + l    {5,151}
+331: okH1 + NoLeakH1 + NoLeakH2 + ~V2 + LowTemp    {5,158}
+332: okH1 + NoLeakH1 + NoLeakH2 + ~V1 + LowTemp    {5,159}
+333: NoLeakH2 + ~V2 + LowTemp    {5,165}
+334: okH2 + NoLeakH2 + ~l    {6,90}
+335: okH2 + NoLeakH2 + ~V1    {6,92}
+336: okH2 + ~NoLeakH1 + ReactorUnitSafe + ~V1 + V2    {6,103}
+337: okH2 + ~NoLeakH1 + ReactorUnitSafe + V2 + l    {6,104}
+338: okH1 + NoLeakH1 + okH2 + NoLeakH2 + ~NoLeak + ReactorUnitSafe + ~V1 + LowTemp    {6,109}
+339: okH2 + NoLeakH2 + ~NoLeak + ReactorUnitSafe + LowTemp    {6,122}
+340: okH1 + okH2 + NoLeak + V2 + LowTemp    {6,135}
+341: okH1 + okH2 + NoLeak + V2 + l    {6,136}
+342: NoLeakH1 + okH2 + NoLeakH2 + LowTemp    {6,153}
+343: NoLeakH1 + okH2 + NoLeakH2 + ~l    {6,154}
+344: ~NoLeakH2 + ~V1 + ReactorUnitSafe + ~l + ~V2    {7,94}
+345: okH2 + ~NoLeakH1 + ~V1 + ReactorUnitSafe + ~l + ~V2    {7,100}
+346: ~NoLeakH2 + ~okH1 + ~V1 + ReactorUnitSafe + ~V2 + LowTemp    {7,112}
+347: ~okH2 + ~NoLeakH1 + ~V1 + ReactorUnitSafe + ~V2 + LowTemp    {7,113}
+348: ~NoLeakH2 + NoLeakH1 + ~V1 + NoLeak + ~V2 + LowTemp    {7,124}
+349: ~okH1 + ~V1 + NoLeak + ~l + LowTemp    {7,125}
+350: okH2 + ~okH1 + ~V1 + NoLeak + ~V2 + LowTemp    {7,127}
+351: okH1 + okH2 + NoLeak + ~l + ~V2 + LowTemp    {7,132}
+352: ~okH2 + NoLeak + ~l + ~V2 + LowTemp    {7,137}
+353: ~okH2 + okH1 + ~V1 + NoLeak + ~V2 + LowTemp    {7,140}
+354: NoLeakH2 + ~NoLeakH1 + ~V1 + NoLeak + ~V2 + LowTemp    {7,142}
+355: okH2 + ~V1 + NoLeak + ~l + LowTemp    {7,145}
+356: ~NoLeakH2 + ~V1 + ReactorUnitSafe + l    {8,94}
+357: ~NoLeakH1 + ~V1 + ReactorUnitSafe + l + V2    {8,97}
+358: okH2 + ~NoLeakH1 + ~V1 + ReactorUnitSafe + l    {8,100}
+359: ~NoLeakH2 + okH1 + ReactorUnitSafe + ~V2 + l + LowTemp    {8,118}
+360: okH1 + NoLeak + l + V2 + LowTemp    {8,129}
+361: okH1 + okH2 + NoLeak + l + LowTemp    {8,131}
+362: ~okH2 + NoLeak + l + LowTemp    {8,137}
+363: okH2 + NoLeak + l + V2 + LowTemp    {8,144}
+364: ~NoLeakH2 + ReactorUnitSafe + ~V2 + V1 + l    {9,93}
+365: ~NoLeakH2 + ReactorUnitSafe + ~V2 + l    {9,94}
+366: okH2 + ~NoLeakH1 + ReactorUnitSafe + ~V2 + l    {9,100}
+367: okH2 + ~NoLeakH1 + ReactorUnitSafe + ~V1 + l + LowTemp    {9,114}
+368: ~okH1 + NoLeak + l + LowTemp    {9,125}
+369: okH1 + NoLeak + V1 + l + LowTemp    {9,129}
+370: okH2 + NoLeak + V1 + l + LowTemp    {9,144}
+371: okH2 + NoLeak + l + LowTemp    {9,145}
+372: False    {10,91}
+Size of final clause set: 372

@@ -1,0 +1,13 @@
+Constructing the knowledge base from file src/main/resources/task3.in
+1: ~NoLeakH2 + ~NoLeakH1 + NoLeak    {}
+2: NoLeakH1 + ~okH1    {}
+3: okH1 + NoLeakH1 + V1    {}
+4: ~okH2 + NoLeakH2    {}
+5: okH2 + NoLeakH2 + V2    {}
+6: ~okH2    {}
+7: okH1    {}
+8: ~V2    {}
+9: NoLeak    {}
+Size of final clause set: 9
+Resolving the knowledge base
+Failure

@@ -34,3 +34,7 @@ For example:
 ```
 Usage: prove <INPUT_FILE>
 ```
+
+## Input and Output
+The input files are located in the input directory.
+The output files are located in the output directory.
