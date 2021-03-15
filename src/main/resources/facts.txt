@@ -12,4 +12,3 @@ l ~V2 LowTemp
 okH1
 V1
 ~V2
-~LowTemp
